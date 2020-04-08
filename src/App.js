@@ -41,7 +41,7 @@ class App extends Component {
     const { cites } = this.state;
     const quoteOfTheDay = cites[Math.floor(Math.random() *
       cites.length)]
-    console.log(quoteOfTheDay);
+    console.log(typeof quoteOfTheDay);
   }
 
   openModal = () => {
