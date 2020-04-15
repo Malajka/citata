@@ -1,0 +1,109 @@
+.inpt {
+  display: flex;
+  flex-direction: column-reverse;
+  //   input {
+  //     border: 0;
+  //     padding: 7px 15px;
+  //     border: 1px solid #ccc;
+  //     position: relative;
+  //     background: transparent;
+  //   }
+}
+
+.textarea,
+.input {
+  border: 0;
+  padding: 0.4rem;
+  position: relative;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.9rem;
+  height: 2.2rem;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 0.1rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: #b19494;
+       border-radius:10%;
+
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ff67df;
+
+    border-radius:100%;
+    border-bottom:0.3rem solid #b19494;
+    border-top:0.3rem solid #b19494;
+
+
+  }
+  &::placeholder {
+    color: #b19494;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.78rem;
+    transition: 0.2s ease-out;
+  }
+
+  &:focus {
+    background-image: url('../../assets/underline.png');
+    background-size: 100px;
+    background-position-y: 75%;
+    background-repeat: no-repeat;
+    // padding: 0.5rem;
+
+    &::placeholder {
+      font-size: 0.68rem;
+      color: #a83acd;
+    }
+  }
+  &:active {
+    & ~ placeholder {
+      color: #a83acd;
+    }
+  }
+}
+.input {
+  &:focus {
+    padding-bottom: 1rem;
+  }
+  &::placeholder {
+    background-position-y: 85%;
+  }
+}
+.textarea{
+    resize:none;
+}
+//   ~ .focusBg:before,
+//     ~ .focusBg:after {
+//       content: '';
+//       position: absolute;
+//       left: 50%;
+//       top: 50%;
+//       width: 0;
+//       height: 0;
+//       background-color: #ededed;
+//       transition: 0.3s;
+//       z-index: -1;
+//     }
+//     &focus ~ .focusBg:before {
+//       transition: 0.3s;
+//       width: 50%;
+//       left: 0;
+//       top: 0;
+//       height: 100%;
+//     }
+//     ~ .focusBg:after {
+//       left: auto;
+//       right: 50%;
+//       top: auto;
+//       bottom: 50%;
+//     }
+//     &focus ~ .focusBg:after {
+//       transition: 0.3s;
+//       width: 50%;
+//       height: 100%;
+//       bottom: 0;
+//       right: 0;
+//     }

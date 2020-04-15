@@ -1,0 +1,30 @@
+.btnBasic {
+  background: transparent;
+  border: none;
+  color: #a83acd;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.95rem;
+  background-image: url('../../assets/underline.png');
+  background-size: contain;
+  background-position-y: 75%;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+  transition: 600ms ease;
+  outline:none;
+  cursor: pointer;
+
+  &:hover {
+    background-position-y: 53%;
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    -o-filter: blur(1px);
+    -ms-filter: blur(1px);
+  }
+}
+.secondary {
+  @extend .btnBasic;
+  // background-image: none;
+  position: relative;
+  left: 70%;
+  // color: #332b33;
+}

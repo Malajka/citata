@@ -3,7 +3,7 @@ import styles from './Button.module.scss';
 
 const Button = ({ secondary, children, href, ...props }) => {
 
-  const secondaryStyle =  secondary ? styles.secondary : styles.button;
+  const secondaryStyle = secondary ? styles.secondary : styles.btnBasic ;
   return (
     <>
       {href ? (
@@ -11,7 +11,7 @@ const Button = ({ secondary, children, href, ...props }) => {
           {children}
         </a>
       ) : (
-        <button className={secondaryStyle} {...props} >
+        <button type="button" className={secondaryStyle} {...props}>
           {children}
         </button>
       )}

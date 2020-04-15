@@ -1,12 +1,15 @@
 .wrapper {
-    top:50%;
-    transform:translateY(-50%);
-    left: 0;
-    right: 0;
-    margin:0 auto;
-    width:40vw;
-    height:50vh;
-    box-shadow:  0 10px 40px -15px rgba(#818181, 0.5);
-    position:fixed;
+  top: 15%;
 
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50vw;
+  height: 40vh;
+
+  position: fixed;
+  z-index: 99;
+  background: #332b33;
+  box-shadow: 3px -4px 5px #ff67df, 0px 20px 13px #332b33;
+  // box-shadow: 3px -4px 5px #ff67df, 1px 0px 0pX, 0px 20px 13px #332b33;
 }

@@ -1,0 +1,119 @@
+.loaderContainer {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10rem;
+  height: 5rem;
+  background: #332b33;
+  border-radius: 0px 0px 50px 50px;
+  position: relative;
+  //   z-index: -1;
+  //   left: 0%;
+  //   top: 20%;
+  //   overflow: hidden;
+}
+.loaderImg {
+  -webkit-backface-visibility: hidden;
+  margin-top: -10px;
+  width: 100%;
+  //   height: 100%;
+  // max-width: 7rem;
+  position: absolute;
+  background: #332b33;
+  //   border-radius: 20px;
+  //   box-shadow: -1px -4px 0px 0px #a83acd;
+  //   -webkit-transform: rotate(45deg);
+  top: 100%;
+  left: 16%;
+  z-index: 1;
+  -webkit-animation: bodyAnim 2s infinite alternate;
+  -webkit-animation-timing-function: ease-out;
+}
+.loaderTxt {
+  position: absolute;
+
+  height: 32px;
+
+  line-height: 1.5;
+  margin: -1rem auto;
+  -webkit-font-smoothing: antialiased;
+
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #a83acd;
+animation-timing-function: ease-out;
+  -webkit-animation: txtAnim 2s infinite;
+  -webkit-animation-timing-function: ease-out;
+  word-wrap: break-word;
+  display: block;
+  overflow: hidden;
+}
+.loaderStaticImg {
+  fill: #a83acd;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+@keyframes bodyAnim {
+  0% {
+    left: -10px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: -5px;
+  }
+}
+@-webkit-keyframes bodyAnim {
+  0% {
+    left: -10px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: -5px;
+  }
+}
+@keyframes txtAnim {
+  0% {
+    width: 0rem;
+  }
+  //    16%{ width:8ch; }
+  //    32%{ width:9ch; }
+  //    48%{ width:10ch; }
+  50% {
+    width: 5rem;
+  }
+  //    80%{ width:12ch; }
+  100% {
+    width: 10rem;
+  }
+}
+
+@-webkit-keyframes txtAnim {
+  0% {
+    width: 7ch;
+  }
+  16% {
+    width: 8ch;
+  }
+  32% {
+    width: 9ch;
+  }
+  48% {
+    width: 10ch;
+  }
+  64% {
+    width: 11ch;
+  }
+  80% {
+    width: 12ch;
+  }
+  100% {
+    width: 13ch;
+  }
+}

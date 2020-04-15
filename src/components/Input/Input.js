@@ -2,10 +2,18 @@ import  React from 'react';
 import { PropTypes as T } from 'prop-types';
 import styles from "./Input.module.scss";
 
-const Input = ({ tag: Tag, name, label, maxLength, ...props  }) => (
-  <div>
-        <Tag className={Tag === 'textarea' ? styles.textarea : styles.input} placeholder={name} name={name} type="text" maxLength={maxLength} {...props}  />
-    <label htmlFor={name}>{label}</label>
+const Input = ({ tag: Tag, name, label, maxLength, ...props }) => (
+  <div className={styles.inpt}>
+    <Tag
+      className={Tag === 'textarea' ? styles.textarea : styles.input}
+      placeholder={name}
+      name={name}
+      type="text"
+      maxLength={maxLength}
+      {...props}
+    />
+    {/* <label htmlFor={name}>{label}</label> */}
+
   </div>
 );
 

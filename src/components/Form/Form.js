@@ -25,21 +25,24 @@ class Form extends Component {
       <Context.Consumer>
         {context => (
           <form onSubmit={context.onSubmit} className={styles.wrapper} autoComplete="off">
-            <Input
-              tag="textarea"
-              name="citation"
-              label="Citation"
-              maxLength={250}
-              value={citation}
-              onChange={this.onInptChange}
-            />
-            <Input
-              name="author"
-              label="Author"
-              maxLength={80}
-              value={author}
-              onChange={this.onInptChange}
-            />
+
+              <Input
+                label="Citation"
+                tag="textarea"
+                name="citation"
+                maxLength={250}
+                value={citation}
+                onChange={this.onInptChange}
+              />
+              <Input
+                label="Author"
+                name="author"
+                maxLength={80}
+                value={author}
+                onChange={this.onInptChange}
+
+              />
+
             <Button type="submit">Add new quote</Button>
           </form>
         )}
