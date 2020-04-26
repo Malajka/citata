@@ -1,0 +1,32 @@
+.wrapper {
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  max-width: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  p {
+    font-style: italic;
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+}
+.thnkPgWrapper {
+  @extend.wrapper;
+  align-items: center;
+}
+.intlPgWrapper {
+  display: flex;
+  justify-content: center;
+  button {
+    margin-top: 15vh;
+  }
+}

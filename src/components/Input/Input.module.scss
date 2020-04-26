@@ -13,49 +13,48 @@
 .textarea,
 .input {
   border: 0;
-  padding: 0.4rem;
+
   position: relative;
   background: transparent;
   outline: none;
   color: #fff;
   font-family: 'Quicksand', sans-serif;
-  font-size: 0.9rem;
-  height: 2.2rem;
+  font-size: 3rem;
+  height: 4.5rem;
   overflow-y: auto;
+  box-shadow: 0rem 0.4rem 0.4rem -0.4rem #ffa260;
   &::-webkit-scrollbar {
-    width: 0.1rem;
+    width: 0.5rem;
   }
   &::-webkit-scrollbar-track {
     background: #b19494;
-       border-radius:10%;
-
+    border-radius: 10%;
   }
   &::-webkit-scrollbar-thumb {
     background: #ff67df;
-
-    border-radius:100%;
-    border-bottom:0.3rem solid #b19494;
-    border-top:0.3rem solid #b19494;
-
-
+    border-radius: 100%;
+    border-bottom: 0.3rem solid #b19494;
+    border-top: 0.3rem solid #b19494;
   }
   &::placeholder {
     color: #b19494;
     font-family: 'Quicksand', sans-serif;
-    font-size: 0.78rem;
+    font-size: 2rem;
+    line-height: 4rem;
     transition: 0.2s ease-out;
   }
 
   &:focus {
-    background-image: url('../../assets/underline.png');
-    background-size: 100px;
-    background-position-y: 75%;
-    background-repeat: no-repeat;
+    // background-image: url('../../assets/underline.png');
+    // background-size: 100px;
+    // background-position-y: 75%;
+    // background-repeat: no-repeat;
     // padding: 0.5rem;
 
     &::placeholder {
-      font-size: 0.68rem;
+      font-size: 1.68rem;
       color: #a83acd;
+      // color:#a39f33 ;
     }
   }
   &:active {
@@ -72,8 +71,8 @@
     background-position-y: 85%;
   }
 }
-.textarea{
-    resize:none;
+.textarea {
+  resize: none;
 }
 //   ~ .focusBg:before,
 //     ~ .focusBg:after {

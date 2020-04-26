@@ -21,32 +21,27 @@ class Form extends Component {
 
   render() {
     const {citation, author} = this.state;
+    const { addQuote } = this.props;
     return (
-      <Context.Consumer>
-        {context => (
-          <form onSubmit={context.onSubmit} className={styles.wrapper} autoComplete="off">
+      <form onSubmit={addQuote} className={styles.wrapper} autoComplete="off">
+        <Input
+          label="Citation"
+          tag="textarea"
+          name="citation"
+          maxLength={250}
+          value={citation}
+          onChange={this.onInptChange}
+        />
+        <Input
+          label="Author"
+          name="author"
+          maxLength={80}
+          value={author}
+          onChange={this.onInptChange}
+        />
 
-              <Input
-                label="Citation"
-                tag="textarea"
-                name="citation"
-                maxLength={250}
-                value={citation}
-                onChange={this.onInptChange}
-              />
-              <Input
-                label="Author"
-                name="author"
-                maxLength={80}
-                value={author}
-                onChange={this.onInptChange}
-
-              />
-
-            <Button type="submit">Add new quote</Button>
-          </form>
-        )}
-      </Context.Consumer>
+        <Button type="submit">Add new quote</Button>
+      </form>
     );
   }
 }

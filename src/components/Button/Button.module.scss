@@ -3,18 +3,19 @@
   border: none;
   color: #a83acd;
   font-family: 'Quicksand', sans-serif;
-  font-size: 0.95rem;
+  font-size: 3.5rem;
   background-image: url('../../assets/underline.png');
   background-size: contain;
-  background-position-y: 75%;
+  background-position-y: 90%;
   background-repeat: no-repeat;
-  padding: 1.5rem;
+  padding: 2.5rem;
   transition: 600ms ease;
-  outline:none;
+  outline: none;
   cursor: pointer;
+  align-self: center;
 
   &:hover {
-    background-position-y: 53%;
+    background-position-y:55%;
     -webkit-filter: blur(1px);
     -moz-filter: blur(1px);
     -o-filter: blur(1px);
@@ -25,6 +26,29 @@
   @extend .btnBasic;
   // background-image: none;
   position: relative;
-  left: 70%;
-  // color: #332b33;
+  left: 80%;
+  top:5%;
+}
+.addingQuote {
+  background: transparent;
+  position: absolute;
+  bottom: 2rem;
+  right: 3rem;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  border: none;
+  box-shadow: 0.2rem 0.4rem 0.4rem -0.4rem #ffa260;
+  background-image: url(../../assets/addIcon.png);
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0.2rem 0.5rem 0.5rem -0.4rem #ffa260;
+    transform: translateY(-0.25em);
+  }
 }

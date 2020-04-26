@@ -3,10 +3,10 @@ import styles from './Modal.module.scss';
 import Form from '../Form/Form';
 import Button from '../Button/Button';
 
-const Modal = ({ closeModal }) => (
+const Modal = ({ ...props }) => (
   <div className={styles.wrapper}>
-    <Button secondary onClick={closeModal}>close</Button>
-    <Form onSubmit />
+    <Button secondary onClick={props.closeModal}>close</Button>
+    <Form  {...props}/>
   </div>
 );
 

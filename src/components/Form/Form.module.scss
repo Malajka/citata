@@ -1,12 +1,15 @@
-.wrapper{
-
-    padding:20px;
-     background: #332b33;
+.wrapper {
+  padding: 7rem 7rem 3rem;
+  background: #332b33;
+  input,
+  textarea {
+    margin-bottom: 5rem;
+  }
+  input {
+    padding-bottom: 1rem;
+  }
 }
 
-
-.inpt +label {
-
-        position: relative;
+.inpt + label {
+  position: relative;
 }
-
