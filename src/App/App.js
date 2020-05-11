@@ -29,7 +29,7 @@ class App extends Component {
   };
 
   onLoad = () => {
-    const { cites, loading } = this.state;
+    const { cites } = this.state;
     const quoteOfTheDay = cites[Math.floor(Math.random() * cites.length)];
 
     this.showBtn();
@@ -126,89 +126,3 @@ class App extends Component {
 }
 
 export default App;
-// {
-//   cites.map(cite => (
-//     <QuoteItem {...cite} key={cite.id} />
-//   ))
-// }
-// (
-//   <>
-//     {href ? (
-//       <a href={href} target="_blank" rel="noopener noreferrer">
-//         {children}
-//       </a>
-//     ) : (
-//         <button className={secondaryStyle} {...props} >
-//           {children}
-//         </button>
-//       )}
-//   </>
-// );
-// { quoteOfTheDay.author }
-// { isModalOpen && <div className={styles.openModalBlur} /> }
-// <Context.Provider value={contextItems}>
-//   {/* <QuoteWrapper cites={cites} /> */}
-//   {!thankYouImg ? (
-//     <>
-//       {quoteOfTheDay !== 0 && (
-//         < QuoteView quote />
-//       )}
-//       {/* {thankYouImg && <img src={ GratitudeImg} alt="gratitude" />} */}
-//       {!showButton && Object.keys(quote).length === 0 && <LoadingView />}
-
-//       {showButton && <InitialView showRandomQuote={this.showRandomQuote} />}
-
-//       {/* {loading && <Loader />} */}
-//       <Button onClick={this.openModal}>add new item</Button>
-//       {isModalOpen && <Modal closeModal={this.closeModal} />}
-//     </>
-//   ) : (
-//       <>
-//         <ThankYouView />
-//         <AddingQuoteView />
-//       </>
-//     )
-// function handleChange() {
-//     this.setState({ load: true })
-//     this.props.actions.getItemsFromThirtParty(input)
-//     this.setState({ load: false })
-// };
-
-// function  fetchQuotes async () {
-//       try {
-//         const yy = await this.onLoad()
-//         const t = await setTimeout(() => {
-//           this.setState({
-//             quote: { ...quoteOfTheDay },
-//           });
-//         }, 2000)
-//         // const p = await this.onLoad()
-
-//       } catch (err) {
-//         return err;
-//       }
-//     };
-
-// return fetchQuotes();
-//       // eslint-disable-next-line no-unused-expressions
-//        async function handleChange () {
-
-//       await this.setState(prevState => ({
-//         loading: !prevState.loading,
-//       }))
-//        await  this.setState({ quote: { ...quoteOfTheDay }, loading: false })
-
-//        }
-// handleChange();
-
-//  this.setState({ loading: false });
-// this.showBtn();
-// const { cites, loading } = this.state;
-// const quoteOfTheDay = cites[Math.floor(Math.random() * cites.length)];
-// import Modal from '../components/Modal/Modal';
-
-// import Button from '../components/Button/Button';
-
-// import LoadingView from '../views/LoadingView';
-
-// import QuoteView from '../views/QuoteView';

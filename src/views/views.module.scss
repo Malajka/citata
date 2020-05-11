@@ -1,27 +1,36 @@
+@import '../variables.scss';
+
 .wrapper {
   margin: auto;
   position: absolute;
   left: 0;
   right: 0;
   display: flex;
-  max-width: 80%;
-  top: 50%;
-  transform: translateY(-50%);
+  max-width: 70%;
+  top: 30%;
   display: flex;
   flex-direction: column;
   p {
-    font-style: italic;
     font-size: 2.5rem;
   }
   h3 {
     font-size: 3.4rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.5;
+    @media (max-width: $screen-md) {
+      font-size: 3rem;
+    }
   }
 }
 .thnkPgWrapper {
   @extend.wrapper;
   align-items: center;
+  top: 15%;
+  img {
+    @media (max-width: $screen-md) {
+      max-width: 80vw;
+    }
+  }
 }
 .intlPgWrapper {
   display: flex;

@@ -1,6 +1,11 @@
+@import '../../variables.scss';
+
 .wrapper {
   padding: 7rem 7rem 3rem;
   background: #332b33;
+  @media (max-width: $screen-md) {
+    padding: 7rem 2rem;
+  }
   input,
   textarea {
     margin-bottom: 5rem;

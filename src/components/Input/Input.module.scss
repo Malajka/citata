@@ -1,19 +1,14 @@
+@import '../../variables.scss';
+
 .inpt {
   display: flex;
   flex-direction: column-reverse;
-  //   input {
-  //     border: 0;
-  //     padding: 7px 15px;
-  //     border: 1px solid #ccc;
-  //     position: relative;
-  //     background: transparent;
-  //   }
+  background: transparent;
 }
 
 .textarea,
 .input {
   border: 0;
-
   position: relative;
   background: transparent;
   outline: none;
@@ -23,6 +18,9 @@
   height: 4.5rem;
   overflow-y: auto;
   box-shadow: 0rem 0.4rem 0.4rem -0.4rem #ffa260;
+  @media (max-width: $screen-md) {
+    font-size: 2.3rem;
+  }
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -45,16 +43,9 @@
   }
 
   &:focus {
-    // background-image: url('../../assets/underline.png');
-    // background-size: 100px;
-    // background-position-y: 75%;
-    // background-repeat: no-repeat;
-    // padding: 0.5rem;
-
     &::placeholder {
       font-size: 1.68rem;
       color: #a83acd;
-      // color:#a39f33 ;
     }
   }
   &:active {
@@ -74,35 +65,3 @@
 .textarea {
   resize: none;
 }
-//   ~ .focusBg:before,
-//     ~ .focusBg:after {
-//       content: '';
-//       position: absolute;
-//       left: 50%;
-//       top: 50%;
-//       width: 0;
-//       height: 0;
-//       background-color: #ededed;
-//       transition: 0.3s;
-//       z-index: -1;
-//     }
-//     &focus ~ .focusBg:before {
-//       transition: 0.3s;
-//       width: 50%;
-//       left: 0;
-//       top: 0;
-//       height: 100%;
-//     }
-//     ~ .focusBg:after {
-//       left: auto;
-//       right: 50%;
-//       top: auto;
-//       bottom: 50%;
-//     }
-//     &focus ~ .focusBg:after {
-//       transition: 0.3s;
-//       width: 50%;
-//       height: 100%;
-//       bottom: 0;
-//       right: 0;
-//     }
