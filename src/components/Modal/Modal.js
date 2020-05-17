@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import Context from "../../context";
 import styles from './Modal.module.scss';
 import Form from '../Form/Form';
 import Button from '../Button/Button';
 
-const Modal = ({ ...props }) => (
-  <div className={styles.wrapper}>
-    <Button secondary onClick={props.closeModal}>close</Button>
-    <Form  {...props}/>
-  </div>
-);
+const Modal = () => {
+const context = useContext(Context);
+const {isModalOpen} = context;
+ const modalHandler = () => {
+   context.toggleModal();
+ };
+  return (
+       <>
+     {isModalOpen &&
+    <div className={styles.wrapper}>
+      <Button secondary onClick={modalHandler}>
+        close
+      </Button>
+    <Form />
+    </div>
+  }
+  </>
+  );
+};
 
 export default Modal;
+

@@ -13,9 +13,8 @@
   background: transparent;
   outline: none;
   color: #fff;
-  font-family: 'Quicksand', sans-serif;
   font-size: 3rem;
-  height: 4.5rem;
+  height: 6rem;
   overflow-y: auto;
   box-shadow: 0rem 0.4rem 0.4rem -0.4rem #ffa260;
   @media (max-width: $screen-md) {
@@ -36,8 +35,7 @@
   }
   &::placeholder {
     color: #b19494;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2rem;
+     font-size: 2rem;
     line-height: 4rem;
     transition: 0.2s ease-out;
   }
@@ -64,4 +62,13 @@
 }
 .textarea {
   resize: none;
+    font-size: 2.6rem;;
+    // min-height: 100px;
+    // position: relative;
+      //  border: 0.3rem solid #b19494;
+      //  box-shadow: 2rem 0.4rem 0.4rem -0.4rem #ffa260;
+    //  &::placeholder {
+    //    position: absolute;
+    //    bottom:5px;
+    //  }
 }

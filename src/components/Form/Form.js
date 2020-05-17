@@ -1,48 +1,55 @@
-import React, { Component } from 'react';
+import React, { useState, useContext } from 'react';
 // import { PropTypes as T } from 'prop-types';
 import styles from './Form.module.scss';
 import Context from '../../context';
 import Input from '../Input/Input';
 import Button from '../Button/Button';
 
-class Form extends Component {
-  state = {
-    citation:'',
-     author:'',
+const Form = () =>{
+const context = useContext(Context)
+const [citation, setCitation] = useState('');
+const [author, setAuthor] = useState('');
+const { addQuoteHandler } = context;
+
+// onInptChange = (e) => (
+//     this.setState({
+//       [e.target.name]: e.target.value
+//     })
+
+// const modalHandler = () => {
+//     toggleModal();
+// };
+
+//   )
+  const postQuote = e =>{
+    e.preventDefault();
+    addQuoteHandler({ citation, author });
   }
 
-  onInptChange = (e) => (
-    this.setState({
-      [e.target.name]: e.target.value
-    })
 
-
-  )
-
-  render() {
-    const {citation, author} = this.state;
-    const { addQuote } = this.props;
     return (
-      <form onSubmit={addQuote} className={styles.wrapper} autoComplete="off">
+      <form onSubmit={postQuote} className={styles.wrapper} autoComplete="off">
         <Input
           label="Citation"
           tag="textarea"
           name="citation"
           maxLength={250}
           value={citation}
-          onChange={this.onInptChange}
+          onChange={e => setCitation(e.target.value)}
         />
         <Input
           label="Author"
           name="author"
           maxLength={80}
           value={author}
-          onChange={this.onInptChange}
+          onChange={e => setAuthor(e.target.value)}
         />
 
-        <Button type="submit">Add new quote</Button>
+        <Button type="submit" >
+          Add new quote
+        </Button>
       </form>
     );
   }
-}
+
 export default Form;
