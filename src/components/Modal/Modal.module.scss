@@ -7,12 +7,35 @@
   margin: 0 auto;
   width: 50vw;
   height: 40vh;
-  position: fixed;
+  position: absolute;
   z-index: 99;
-  background: #332b33;
-  box-shadow: 3px -4px 5px #ff67df, 0px 20px 13px #332b33;
+  background: $yellow;
+  box-shadow: 3px -4px 5px $blue, 0px 20px 13px $blue;
+  transition: 4s ease;
   @media (max-width: $screen-xl) {
     width: 90vw;
     top: 10%;
+    @media (orientation: landscape) {
+      top: 3%;
+    }
+  }
+}
+.ModalOpen {
+  @extend .wrapper;
+  animation: openModal 1s ease-out forwards;
+}
+
+@keyframes openModal {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(8%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

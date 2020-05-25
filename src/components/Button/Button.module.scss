@@ -3,7 +3,7 @@
 .btnBasic {
   background: transparent;
   border: none;
-  color: #a83acd;
+  color: $blue;
   font-size: 3.8rem;
   background-image: url('../../assets/underline.png');
   background-size: contain;
@@ -12,7 +12,6 @@
   padding: 2.5rem;
   transition: 600ms ease;
   outline: none;
-  cursor: pointer;
   align-self: center;
 
   @media (max-width: $screen-md) {
@@ -43,7 +42,7 @@
 
 .addingQuote {
   background: transparent;
-  position: absolute;
+  position: fixed;
   bottom: 3rem;
   right: 3rem;
   padding: 2rem;
@@ -51,22 +50,25 @@
   width: 15rem;
   height: 15rem;
   border: none;
-  box-shadow: 0.2rem 0.4rem 0.4rem -0.4rem #ffa260;
+  box-shadow: 0.3rem 0.6rem 0.4rem -0.4rem $blue;
   background-image: url(../../assets/addIcon.png);
-  background-color: #332b33;
-  background-size: 75%;
-  background-position: center;
+  background-color: $main;
+  background-size: 100%;
+  background-position: 76% 50%;
   background-repeat: no-repeat;
   outline: none;
-  cursor: pointer;
   transition: 0.2s ease-in-out;
   @media (max-width: $screen-lg) {
-    width: 10rem;
-    height: 10rem;
+    width: 9rem;
+    height: 9rem;
+    box-shadow: 0.1rem 0rem 1.7rem -0.2rem $blue;
+  }
+  @media (max-width: $screen-md) {
+    width: 7rem;
+    height: 7rem;
   }
   &:hover {
-    box-shadow: 0.2rem 0.5rem 0.5rem -0.4rem #ffa260;
+    box-shadow: 0.2rem 0.8rem 0.5rem -0.4rem $blue;
     transform: translateY(-0.25em);
   }
 }
-

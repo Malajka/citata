@@ -3,14 +3,12 @@ import styles from './Loader.module.scss';
 import hand from '../../assets/hand.png';
 
 const Loader = () => {
-return (
-  <div className={styles.loaderContainer}>
-    <div className={styles.loaderTxt}>FINDING YOUR QUOTE . . . </div>
-        <svg className={styles.loaderStaticImg}
-
-    >
-      <path
-        d="M49.015,0.803
+  return (
+    <div className={styles.loaderContainer}>
+      <div className={styles.loaderTxt}>FINDING YOURS. . . </div>
+      <svg className={styles.loaderStaticImg}>
+        <path
+          d="M49.015,0.803
     c-0.133-1.071-1.896-1.071-2.029,0
     C42.57,36.344,20,43.666,20,68.367
     C20,83.627,32.816,96,48,96
@@ -25,11 +23,11 @@ return (
     c1.469-1.991,2.855-3.873,3.983-5.749
     c0.516-0.856,1.903-0.82,2.533,0.029
     C44.781,39.116,44.879,39.619,44.751,40.09z"
-      />
-    </svg>
-    <img src={hand} className={styles.loaderImg} alt="hands" />
-  </div>
-);
-}
+        />
+      </svg>
+      <img src={hand} className={styles.loaderImg} alt="hands" />
+    </div>
+  );
+};
 
 export default Loader;

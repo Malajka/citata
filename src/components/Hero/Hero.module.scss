@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.wrapper {
+  display: flex;
+
+  height: 300px;
+  @media (max-width: $screen-lg) {
+    padding: 0 1.5rem;
+    @media (orientation: landscape) {
+      height: 170px;
+      padding: 1.5rem;
+      .hero {
+        background-position-x: 35%;
+      }
+    }
+  }
+  @media (max-width: $screen-sm) {
+    width: 90vw;
+  }
+  img {
+    align-self: flex-end;
+    max-width: 50px;
+    margin-right: 1.1rem;
+  }
+}
+.hero {
+  background-image: url('../../assets/hero.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50rem;
+  position: relative;
+  animation-name: zen;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease;
+  background-position: 20% 35%;
+  z-index: -1;
+  @media (max-width: $screen-sm) {
+    transform: translateX(-2.6rem);
+  }
+}
+@keyframes zen {
+  0% {
+    left: 0px;
+    top: 20px;
+  }
+  50% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 20px;
+  }
+}

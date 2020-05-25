@@ -1,6 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Italianno&family=Kavivanar&family=Mali:wght@400;600&family=Sedgwick+Ave&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Kavivanar&family=Scope+One&family=Sedgwick+Ave&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;800&display=swap');
 *,
 *::before,
 *::after {
@@ -10,21 +8,17 @@
 }
 html {
   font-size: 62.5%; /*happy rems 1rem = 10px */
-/* font-family: 'Kavivanar', cursive; */
-/* font-family: 'Sedgwick Ave', cursive; */
-font-family: 'Scope One', serif;
-
-  color: #fff;
+  font-family: 'Baloo Chettan 2', cursive;
 }
-button,input, textarea{
-  /* font-family: 'Sedgwick Ave', cursive; */
-/* font-family: 'Kavivanar', cursive; */
-font-family: 'Scope One', serif;
-
+button,
+input,
+textarea {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+button,
+a {
+  cursor: pointer;
 }
 body {
-  background: #332b33;
-  height: 100vh;
-  position: relative;
+  background: #f8dd76;
 }
-

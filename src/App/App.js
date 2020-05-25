@@ -61,7 +61,6 @@ const App = () => {
       });
   };
 
-  // const clearError = () => dispatchRequest({ type: 'CLEAR ERROR' });
 
   const showRandomQuote = () => {
     dispatchRequest({ type: 'GET' });
@@ -70,10 +69,9 @@ const App = () => {
         .then(response => response.json())
         .then(data => {
           const fetchedQuotes = [];
-          // eslint-disable-next-line guard-for-in
           // eslint-disable-next-line no-restricted-syntax
           for (const key in data) {
-            if (Object.prototype.hasOwnProperty.call(data,key)) {
+            if (Object.prototype.hasOwnProperty.call(data, key)) {
               fetchedQuotes.push({
                 id: key,
                 author: data[key].author,
@@ -88,7 +86,7 @@ const App = () => {
         .catch(() => {
           dispatchRequest({ type: 'ERROR', error: ErrorMsg });
         });
-    }, 6200);
+    }, 4200);
   };
 
   const contextItems = {

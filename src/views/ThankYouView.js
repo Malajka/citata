@@ -6,14 +6,14 @@ import styles from './views.module.scss';
 
 const ThnkBtn = styled.button`
   background: none;
-  color: #fff;
+  color: #10375c;
   border: none;
   font-size: 3rem;
-  box-shadow: 0.2rem 0.6rem 0.3rem -0.4rem #ffa260;
+  box-shadow: 0.2rem 0.6rem 0.3rem -0.4rem #10375c;
   cursor: pointer;
-  transition:0.2s ease-in;
+  transition: 0.2s ease-in;
   &:hover {
-    box-shadow: 0.2rem 0.45rem 0.3rem -0.4rem #ffa260;
+    box-shadow: 0.2rem 0.45rem 0.3rem -0.4rem #10375c;
   }
 `;
 

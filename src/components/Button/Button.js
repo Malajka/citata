@@ -1,6 +1,5 @@
 import React from 'react';
 import { PropTypes as T } from 'prop-types';
-
 import styles from './Button.module.scss';
 
 const Button = ({ secondary, children, href, addingQuote, ...props }) => {
@@ -27,13 +26,13 @@ const Button = ({ secondary, children, href, addingQuote, ...props }) => {
 
 
 Button.propTypes = {
-  secondary: T.string,
+  secondary: T.bool,
   href: T.string,
   children: T.string,
   addingQuote: T.bool,
 };
 Button.defaultProps = {
-  secondary: null,
+  secondary: false,
   addingQuote:false,
   href:null,
   children:null,

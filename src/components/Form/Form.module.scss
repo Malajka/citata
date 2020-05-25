@@ -2,13 +2,25 @@
 
 .wrapper {
   padding: 7rem 7rem 3rem;
-  background: #332b33;
+  background: $yellow;
+  @media (max-width: $screen-lg) {
+    @media (orientation: landscape) {
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+      button {
+        padding: 1.5rem;
+      }
+    }
+  }
   @media (max-width: $screen-md) {
-    padding: 7rem 2rem;
+    padding: 1rem 2rem;
   }
   input,
   textarea {
     margin-bottom: 5rem;
+    @media (max-width: $screen-md) {
+      margin-bottom: 2rem;
+    }
   }
   input {
     padding-bottom: 1rem;

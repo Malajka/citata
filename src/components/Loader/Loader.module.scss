@@ -1,6 +1,6 @@
+@import '../../variables.scss';
+
 .loaderContainer {
-  // -webkit-backface-visibility: hidden;
-  background: #332b33;
   border-radius: 0px 0px 50px 50px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,6 @@
 .loaderImg {
   max-width: 25rem;
   position: relative;
-  background: #332b33;
   animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
   animation: ImgAnim 1.8s infinite alternate;
   -webkit-animation: ImgAnim 1.8s infinite alternate;
@@ -17,15 +16,12 @@
 }
 .loaderTxt {
   position: absolute;
-
   height: 32px;
-
+  font-weight: 500;
   margin: -7.5rem auto;
   -webkit-font-smoothing: antialiased;
-
   font-size: 2.6rem;
-  font-weight: 400;
-  color: #a83acd;
+  color: $blue;
   animation-timing-function: ease-out;
   animation: txtAnim 1.2s infinite;
   -webkit-animation: txtAnim 1.2s infinite;
@@ -33,9 +29,10 @@
   overflow: hidden;
 }
 .loaderStaticImg {
-  fill: #a83acd;
+  fill: $blue;
   position: relative;
   transform: translate(20%, 10%);
+  max-width: 25rem;
 }
 @keyframes ImgAnim {
   0% {
@@ -53,7 +50,7 @@
     transform: translateX(0rem);
   }
   50% {
-    transform: translateX(-4rem);
+    transform: translateX(-2rem);
   }
   100% {
     transform: translateX(0rem);
@@ -64,22 +61,20 @@
     width: 5rem;
   }
   20% {
-    width: 10rem;
+    width: 7rem;
   }
   40% {
-    width: 15rem;
+    width: 10rem;
   }
   60% {
-    width: 20rem;
+    width: 15rem;
   }
   80% {
-    width: 25rem;
+    width: 20rem;
   }
-  // 80% {
-  //   width: 25rem;
-  // }
+
   100% {
-    width: 30rem;
+    width: 25rem;
   }
 }
 

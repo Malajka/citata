@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bb7f7b22.chunk.css",
+    "main.js": "/static/js/main.809644f6.chunk.js",
+    "main.js.map": "/static/js/main.809644f6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e72b922b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e72b922b.js.map",
+    "static/js/2.6d33f067.chunk.js": "/static/js/2.6d33f067.chunk.js",
+    "static/js/2.6d33f067.chunk.js.map": "/static/js/2.6d33f067.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6b489d7e64fa8fd55a9d45681ef18b0d.js": "/precache-manifest.6b489d7e64fa8fd55a9d45681ef18b0d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.bb7f7b22.chunk.css.map": "/static/css/main.bb7f7b22.chunk.css.map",
+    "static/js/2.6d33f067.chunk.js.LICENSE.txt": "/static/js/2.6d33f067.chunk.js.LICENSE.txt",
+    "static/media/Button.module.scss": "/static/media/addIcon.55e224cc.png",
+    "static/media/App.module.scss": "/static/media/fg.dad22da0.png",
+    "static/media/gratitude.png": "/static/media/gratitude.474caeac.png",
+    "static/media/Hero.module.scss": "/static/media/hero.cc6ea765.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e72b922b.js",
+    "static/js/2.6d33f067.chunk.js",
+    "static/css/main.bb7f7b22.chunk.css",
+    "static/js/main.809644f6.chunk.js"
+  ]
+}
